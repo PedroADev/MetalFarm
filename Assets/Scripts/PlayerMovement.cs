@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed=5f;
+    public float moveSpeed;
     public Rigidbody2D rb;
+    public Tools foice,luva,espada;
 
     Vector2 movement;
 
@@ -16,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
     }
 
-    private void FixedUpdate()
+   
+
+private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }

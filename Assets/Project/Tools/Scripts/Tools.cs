@@ -5,5 +5,6 @@ using UnityEngine;
 public class Tools : ScriptableObject
 {
     public string toolName;
+    public bool isHolding;
     public Sprite toolSprite;
 }

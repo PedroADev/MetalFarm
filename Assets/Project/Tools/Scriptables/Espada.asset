@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6722e6ea96cdccc42aceb3eaeb291796, type: 3}
-  m_Name: Foice
+  m_Name: Espada
   m_EditorClassIdentifier: 
-  toolName: Foice
-  isHolding: 1
+  toolName: Espada
   toolSprite: {fileID: 0}

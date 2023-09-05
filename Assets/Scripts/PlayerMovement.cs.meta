@@ -3,7 +3,11 @@ guid: 0ce3e16fe5eaa2c45a532fa272d254e9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - foice: {fileID: 11400000, guid: 67a5240010e577f47b339fcd862dcc2e, type: 2}
+  - luva: {fileID: 11400000, guid: 0ee7bdfcf4e60d143993dc76f4f0dfe9, type: 2}
+  - espada: {fileID: 11400000, guid: 9c79143a0d412734c8a12c16c775bc48, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
