@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6722e6ea96cdccc42aceb3eaeb291796, type: 3}
-  m_Name: Foice
+  m_Script: {fileID: 11500000, guid: 0110b7746785ce441ab3ac9ed71fa9e1, type: 3}
+  m_Name: Onion Seed
   m_EditorClassIdentifier: 
-  toolName: Foice
-  toolSprite: {fileID: 0}
+  cropToGrow: {fileID: 0}
+  growingStateInfos: []
