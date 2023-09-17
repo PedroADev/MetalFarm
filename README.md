@@ -34,7 +34,7 @@
 
 
 ## Descrição do projeto
-Um jogo de simulação com temática Rock’n’Roll, onde o jogador deve cuidar de sua fazenda superando os obstáculos da sua colheita rebelde.
+Um jogo 2D casual com temática Rock’n’Roll, onde o jogador deve cuidar de sua fazenda superando os obstáculos da sua colheita rebelde.
 
 ## Gênero
 Metal Farm é um jogo Arcade Casual com elementos de ação.
