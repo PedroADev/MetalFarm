@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterHeldComponent : MonoBehaviour
 {
-    public BaseItem CurrentHeldItem { get; private set; }
+    [field:SerializeField] public BaseItem CurrentHeldItem { get; private set; }
 
     public bool ChangeHeldItem(BaseItem newItem)
     {

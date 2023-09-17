@@ -1,11 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CropInteractionBehaviour : InteractableComponent
+public class CropInteractionBehaviour : ItemInteractionBehaviour
 {
-    public override void Interact(Interactor interactor)
+    public override bool Interact(Interactor interactor)
     {
-        
+        if(base.Interact(interactor))
+        {
+            expectedBaseItems = new List<BaseItem>(((Crops)interactor.characterHeldComponent.CurrentHeldItem).usableTools);
+        }
+
+        return true;
     }
 }

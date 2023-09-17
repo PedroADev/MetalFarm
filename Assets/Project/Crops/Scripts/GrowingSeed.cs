@@ -19,7 +19,7 @@ public class GrowingSeed : MonoBehaviour
 
     private Coroutine _growingCoroutine = null;
 
-    public UnityEvent onEndGrowing = new UnityEvent();
+    public UnityEvent<Crops> onEndGrowing = new UnityEvent<Crops>();
 
     private Seeds currentSeed;
 
@@ -61,9 +61,11 @@ public class GrowingSeed : MonoBehaviour
 
         if (currentGrowingState == null)
         {
-            onEndGrowing?.Invoke();
+            onEndGrowing?.Invoke(currentSeed.cropToGrow);
             
             Debug.Log("Finish Growing");
+
+            gameObject.SetActive(false);
             
             yield break;
         }

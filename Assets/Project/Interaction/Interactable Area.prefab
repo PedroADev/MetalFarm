@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d31196202b4e3f43a67c41c20830cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <CanInteract>k__BackingField: 1
   OnInteractionSuccess:
     m_PersistentCalls:
       m_Calls: []

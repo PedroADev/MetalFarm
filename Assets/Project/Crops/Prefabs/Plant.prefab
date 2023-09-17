@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,12 +98,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061624f45bd592e4d8d82053f9d3535d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <CanInteract>k__BackingField: 1
   OnInteractionSuccess:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6863020281215625699}
-        m_TargetAssemblyTypeName: PickableObject`1[[Plants, Assembly-CSharp
-        m_MethodName: 
+        m_TargetAssemblyTypeName: PickableObject`1[[Crops, Assembly-CSharp
+        m_MethodName: PickItem
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -113,6 +114,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  expectedBaseItems: []
+  OnItemInteractionSuccess:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6863020281215625699
 MonoBehaviour:
   m_ObjectHideFlags: 0
