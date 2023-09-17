@@ -47,7 +47,7 @@ Metal Farm é um jogo Arcade Casual com elementos de ação.
 ✔️ Arar a Terra
 
 ## História
-Após uma terrível explosão nuclear, a vida sofreu grandes mutações e conseguir comida é uma tarefa muito difícil para a humanidade. O dever do protagonista é cuidar de sua fazenda com plantações que estão ativamente dificultando seu dia a dia, desde tentar fugir de sua colheita até tentar devorar outros dos alimentos. 
+Após uma terrível guerra nuclear, a vida sofreu grandes mutações e conseguir comida é uma tarefa muito difícil para a humanidade. O dever do protagonista é cuidar de sua fazenda com plantações que estão ativamente dificultando seu dia a dia, desde tentar fugir de sua colheita até tentar devorar outros dos alimentos. 
 Você deve arar a terra, plantar e colher as plantas, e caso necessário, enfrentar as que se rebelarem para entregar a comida nesses tempos difíceis e ganhar mais pontos para passar de fase no fim do tempo limite.
 
 ## Diferencial do Projeto
