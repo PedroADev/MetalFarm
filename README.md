@@ -54,7 +54,7 @@ Você deve arar a terra, plantar e colher as plantas, e caso necessário, enfren
 Em comparação com Jogos de estrutura semelhante, como Overcooked e Moving Out, Metal Farm está alinhado com o segundo Objetivo de Desenvolvimento Sustentável da ONU, Fome Zero e Agricultura Sustentável, não apenas abordando o cultivo de alimentos como também na sua necessidade para o desenvolvimento social. 
 
 ## Público Alvo e Classificação Indicativa
-Sendo livre para todos os Publicos, Metal Farm tem como público alvo fãs de jogos casuais com idade entre 10 e 20 anos.
+Com classificação indicativa para 10 anos , Metal Farm tem como público alvo fãs de jogos casuais com idade entre 10 e 20 anos.
 
 ## Como rodar a aplicação 
 Fazer o Download do Pojeto e abri-lo com a Unity.
@@ -64,28 +64,34 @@ Metal Farm está sendo desenvolvido para a plataforma PC - Windows.
 
 ## Testes realizados
 Foram realizados testes com o objetivo de checar o funciomaneto das principais mecânicas do Projeto, utiliazando [debug.log] receber o retorno de determinada implementação através do console dentro da plataforma Unity.
+![image](https://github.com/PedroADev/MetalFarm/assets/89281859/91dad017-ea03-46bb-adee-6c0a69cf0f87)
+
 
 ## Linguagens, dependencias e libs utilizadas 📚
-![unity](https://i.redd.it/tu3gt6ysfxq71.png)
+![unity](https://mmos.com/wp-content/uploads/2017/05/unity-banner.jpg)
 
-Liste as tecnologias utilizadas no projeto que não forem reconhecidas pelo Github
-
-## Resolvendo Problemas 
-Em issues foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos.
+- C#
+- Unity 2D
 
 ## Recursos de inseridos 🧰
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação, insira fotos da tela do app.
+Tarefas/funcionalidas que ainda precisam ser implenetadas no projeto:
 
-📝 Tarefa 1
+📝 Sprite das personagens e itens
 
-📝 Tarefa 2
+📝 Crescimento das plantas
 
-📝 Tarefa 3
+📝 Mecânica de combate
 
 ## Desenvolvedores/Contribuintes:
-Liste o time responsável pelo desenvolvimento do projeto
+
+
+## Cornograma e Orçamento
+
+
+## Objetivo de Desenvolvimento Sustentável
+
 
 ## Licença
 The MIT License (MIT)
 
-## Copyright ©️ Ano - Titulo do Projeto
+## Copyright ©️ 2023 - Metal Farm
