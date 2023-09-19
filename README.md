@@ -89,15 +89,14 @@ Tarefas/funcionalidas que ainda precisam ser implenetadas no projeto:
 ## Desenvolvedores/Contribuintes:
 Firebrunan - https://github.com/firebrunan
 
-## Cornograma e Orçamento
-Orçamento semanal dos desenvolvedores por Hora = 
+## Orçamento:
+### Orçamento semanal da equipe em Horas = 51h
 
-Horas totai previstas = 
 
-Cronograma:
-Setembro/2023 -> Finalização da idealização e estruturação do projeto
-Outubro/2023 -> Demonstração do projeto
-Novembro/2023 -> Ajustes finais
+## Cronograma:
+### Setembro/2023 -> Finalização da idealização e estruturação do projeto
+### Outubro/2023 -> Demonstração do projeto
+### Novembro/2023 -> Ajustes finais
 
 
 
