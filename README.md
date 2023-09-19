@@ -31,8 +31,6 @@
 
 🔹 Objetivo de Desenvolvimento Sustentável
 
-🔹 Desenvolvedores/Contribuintes
-
 🔹 Informações Extras
 
 
@@ -86,25 +84,23 @@ Tarefas/funcionalidas que ainda precisam ser implenetadas no projeto:
 
 📝 Mecânica de combate
 
-## Desenvolvedores/Contribuintes:
-Firebrunan - https://github.com/firebrunan
+## Equipe de desenvolvimento
+Bruno Magalhães - Programador
+Leonardo David - Documentação e Sound Design
+Heloisa Tenório - Artista
+Mary Monkey - Artista
+Pedro Mattos  - Programador 
 
 ## Orçamento:
 ### Orçamento semanal da equipe em Horas = 51h
 
-
 ## Cronograma:
-### Setembro/2023 -> Finalização da idealização e estruturação do projeto
-### Outubro/2023 -> Demonstração do projeto
-### Novembro/2023 -> Ajustes finais
-
-
+- Setembro/2023 -> Finalização da idealização e estruturação do projeto;
+- Outubro/2023 -> Demonstração do projeto;
+- Novembro/2023 -> Ajustes finais;
 
 ## Objetivo de Desenvolvimento Sustentável
-
-
-## Desenvolvedores/Contribuintes
-
+Metal Farm está alinhado com a ODS "Fome Zero e Agricultura Sustentável" da Agenda da ONU para 2030
 
 ## Licença
 The MIT License (MIT)
