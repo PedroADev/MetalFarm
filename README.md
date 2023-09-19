@@ -31,6 +31,10 @@
 
 🔹 Objetivo de Desenvolvimento Sustentável
 
+🔹 Desenvolvedores/Contribuintes
+
+🔹 Informações Extras
+
 
 
 ## Descrição do projeto
@@ -83,12 +87,24 @@ Tarefas/funcionalidas que ainda precisam ser implenetadas no projeto:
 📝 Mecânica de combate
 
 ## Desenvolvedores/Contribuintes:
-
+Firebrunan - https://github.com/firebrunan
 
 ## Cornograma e Orçamento
+Orçamento semanal dos desenvolvedores por Hora = 
+
+Horas totai previstas = 
+
+Cronograma:
+Setembro/2023 -> Finalização da idealização e estruturação do projeto
+Outubro/2023 -> Demonstração do projeto
+Novembro/2023 -> Ajustes finais
+
 
 
 ## Objetivo de Desenvolvimento Sustentável
+
+
+## Desenvolvedores/Contribuintes
 
 
 ## Licença
