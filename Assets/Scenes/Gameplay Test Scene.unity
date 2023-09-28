@@ -492,22 +492,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b69135cadd46764097829c1765bd712, type: 3}
---- !u!1 &1643644400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1012065299365666262, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-  m_PrefabInstance: {fileID: 86305117661621775}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1643644401 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-  m_PrefabInstance: {fileID: 86305117661621775}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643644400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b4c9c452e645564b9c2f4f5d9dca94f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1871763620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -572,81 +556,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 225171424305391677, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 225171424305391677, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1643644401}
-    - target: {fileID: 225171424305391677, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ShowTool
-      objectReference: {fileID: 0}
-    - target: {fileID: 225171424305391677, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PickableTool, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 225171424305391677, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1012065299365666262, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Name
       value: Arador Holder
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1643644401}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1643644400}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTool
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PickableTool, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PickableObject`1[[Tools, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: Interactor, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4548458666452907444, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_RootOrder
@@ -691,34 +603,6 @@ PrefabInstance:
     - target: {fileID: 4548458666452907444, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621997676779238924, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621997676779238924, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621997676779238924, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1643644401}
-    - target: {fileID: 5621997676779238924, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621997676779238924, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PickItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621997676779238924, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PickableObject`1[[Tools, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621997676779238924, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
-      propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
