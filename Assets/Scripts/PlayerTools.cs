@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerTools : MonoBehaviour
 {
-    public Tools tool;
+    /*public Tools tool;
     public Tools otherTool1, otherTool2;
     private bool isPlayerInCollider;
 
@@ -39,10 +39,10 @@ public class PlayerTools : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isPlayerInCollider)
         {
             Debug.Log("Pegou foice");
-            tool.isHolding = true; //ferramenta em questão é segurada pelo player
+            tool.isHolding = true; //ferramenta em questï¿½o ï¿½ segurada pelo player
 
-            otherTool1.isHolding = false; //Outras ferramentas são dropadas
+            otherTool1.isHolding = false; //Outras ferramentas sï¿½o dropadas
             otherTool2.isHolding = false;
         }
-    }
+    }*/
 }

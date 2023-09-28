@@ -5,6 +5,6 @@ using UnityEngine;
 public class Tools : BaseItem
 {
     public string toolName;
-    public bool isHolding;
+
     public Sprite toolSprite;
 }

@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1723708439433014344}
   - component: {fileID: 1723708439433014345}
   m_Layer: 0
-  m_Name: Seed
+  m_Name: Seed Bag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

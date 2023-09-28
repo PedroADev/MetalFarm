@@ -30,9 +30,10 @@ public class GrowingSeed : MonoBehaviour
         currentSeed = (Seeds)seed;
 
         growingStates = currentSeed.growingStateInfos;
-        
-        gameObject.SetActive(true);
-        
+    }
+
+    private void OnEnable()
+    {
         StartGrowing(currentSeed);
     }
 
