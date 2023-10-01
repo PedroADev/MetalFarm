@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 9c79143a0d412734c8a12c16c775bc48, type: 2}
     - target: {fileID: 1012065299365666262, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Name
-      value: Espada Holder Variant
+      value: Espada Holder
       objectReference: {fileID: 0}
     - target: {fileID: 2083434565184925179, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Color.b
@@ -21,11 +21,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2083434565184925179, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Color.g
-      value: 0.94509804
+      value: 0.67399836
       objectReference: {fileID: 0}
     - target: {fileID: 2083434565184925179, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Color.r
-      value: 0.9332195
+      value: 0.94509804
       objectReference: {fileID: 0}
     - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: pickableObject
@@ -37,11 +37,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4548458666452907444, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.04
+      value: 5.59
       objectReference: {fileID: 0}
     - target: {fileID: 4548458666452907444, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.27
+      value: -3.55
       objectReference: {fileID: 0}
     - target: {fileID: 4548458666452907444, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_LocalPosition.z

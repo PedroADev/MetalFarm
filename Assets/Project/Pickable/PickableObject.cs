@@ -7,8 +7,10 @@ using UnityEngine.Events;
 public abstract class PickableObject<T> : MonoBehaviour where T : BaseItem
 {
     [SerializeField] protected T pickableObject;
+    [SerializeField] protected SpriteRenderer spriteRenderer;
 
-    [SerializeField] private UnityEvent<T> OnPickItem = new UnityEvent<T>();
+    [SerializeField] protected UnityEvent<T> OnPickItem = new UnityEvent<T>();
+    [SerializeField] protected UnityEvent OnRemoveItem = new UnityEvent();
 
     public virtual void InitializePickableObject(T baseItem)
     {
@@ -17,9 +19,9 @@ public abstract class PickableObject<T> : MonoBehaviour where T : BaseItem
 
     public virtual void PickItem(Interactor interactor)
     {
-        if (interactor.characterHeldComponent.CurrentHeldItem == null)
+        if (interactor.characterHeldComponent.GetHeldData().currentHeldItem == null)
         {
-            interactor.characterHeldComponent.ChangeHeldItem(pickableObject);
+            interactor.characterHeldComponent.ChangeHeldItem(pickableObject, OnRemoveItem);
             
             OnPickItem?.Invoke(pickableObject);
             //Destroy(gameObject);

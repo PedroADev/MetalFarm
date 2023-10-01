@@ -9,7 +9,7 @@ public class CropInteractionBehaviour : ItemInteractionBehaviour
     {
         if(base.Interact(interactor))
         {
-            expectedBaseItems = new List<BaseItem>(((Crops)interactor.characterHeldComponent.CurrentHeldItem).usableTools);
+            expectedBaseItems = new List<BaseItem>(((Crops)interactor.characterHeldComponent.GetHeldData().currentHeldItem).usableTools);
         }
 
         return true;

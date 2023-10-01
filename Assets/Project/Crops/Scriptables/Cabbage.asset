@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3438b6369f43f8b4a827734e46d55692, type: 3}
   m_Name: Cabbage
   m_EditorClassIdentifier: 
+  cropSprite: {fileID: 1734251447, guid: b9804df22b2052447853f4c9810356fb, type: 3}
   usableTools: []

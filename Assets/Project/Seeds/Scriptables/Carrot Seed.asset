@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0110b7746785ce441ab3ac9ed71fa9e1, type: 3}
   m_Name: Carrot Seed
   m_EditorClassIdentifier: 
-  cropToGrow: {fileID: 0}
-  growingStateInfos: []
+  cropToGrow: {fileID: 11400000, guid: 27c84e87e5535d24c9716b235f70879a, type: 2}
+  growingStateInfos:
+  - stateName: First Stage
+    timeToChangeState: 20
+    stateSprite: {fileID: 442903408, guid: 8db55b0e6c1720048ba9fddc0098eb17, type: 3}
+  - stateName: Second Stage
+    timeToChangeState: 15
+    stateSprite: {fileID: 1296405934, guid: 6274bf39c650373449dfadfb8cd9c800, type: 3}

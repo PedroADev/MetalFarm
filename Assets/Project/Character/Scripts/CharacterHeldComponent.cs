@@ -1,20 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
+[Serializable]
+public struct CharacterHeldData
+{
+    public BaseItem currentHeldItem;
+    
+    public UnityEvent OnRemoveItem;
+}
 
 public class CharacterHeldComponent : MonoBehaviour
 {
-    [field:SerializeField] public BaseItem CurrentHeldItem { get; private set; }
+    [SerializeField] private CharacterHeldData characterHeldData;
 
-    public bool ChangeHeldItem(BaseItem newItem)
+    public bool ChangeHeldItem(BaseItem newItem, UnityEvent onRemoveItem)
     {
-        CurrentHeldItem = newItem;
+        if (characterHeldData.currentHeldItem != null)
+        {
+            RemoveHeldItem();
+        }
+
+        characterHeldData = new CharacterHeldData { currentHeldItem = newItem, OnRemoveItem = onRemoveItem };
 
         return true;
     }
 
     public void RemoveHeldItem()
     {
-        ChangeHeldItem(null);
+        characterHeldData.OnRemoveItem?.Invoke();
+        characterHeldData = new CharacterHeldData { currentHeldItem = null, OnRemoveItem = null };
+        //ChangeHeldItem(null, null);
+    }
+
+    public CharacterHeldData GetHeldData()
+    {
+        return characterHeldData;
     }
 }

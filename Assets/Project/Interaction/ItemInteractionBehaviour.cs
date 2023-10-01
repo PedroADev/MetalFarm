@@ -19,27 +19,27 @@ public class ItemInteractionBehaviour : InteractableComponent
     {
         if(!CanInteract) return false;
         
-        var heldItem = interactor.characterHeldComponent.CurrentHeldItem;
+        var heldItem = interactor.characterHeldComponent.GetHeldData();
 
         if (!CheckHeldItem(heldItem)) return false;
         
         OnInteractionSuccess?.Invoke(interactor);
-        OnItemInteractionSuccess?.Invoke(heldItem);
+        OnItemInteractionSuccess?.Invoke(heldItem.currentHeldItem);
 
         return true;
     }
 
     public void RemoveItem(Interactor interactor)
     {
-        if (CheckHeldItem(interactor.characterHeldComponent.CurrentHeldItem))
+        if (CheckHeldItem(interactor.characterHeldComponent.GetHeldData()))
         {
             interactor.characterHeldComponent.RemoveHeldItem();
         }
     }
 
-    private bool CheckHeldItem(BaseItem heldItem)
+    private bool CheckHeldItem(CharacterHeldData heldData)
     {
-        return expectedBaseItems.Contains(heldItem) || expectedBaseItems.Count <= 0;
+        return expectedBaseItems.Contains(heldData.currentHeldItem) || expectedBaseItems.Count <= 0;
     }
 
     public void ChangeCanInteract(bool value)

@@ -8,6 +8,8 @@ public class InteractableComponent : MonoBehaviour, IInteractable
 {
     [field: SerializeField] public bool CanInteract { get; protected set; } = true;
     
+    public UnityEvent<Interactor> OnInteractionSuccess = new UnityEvent<Interactor>();
+    
     public virtual bool Interact(Interactor interactor)
     {
         if (CanInteract)
@@ -19,8 +21,6 @@ public class InteractableComponent : MonoBehaviour, IInteractable
 
         return false;
     }
-
-    public UnityEvent<Interactor> OnInteractionSuccess = new UnityEvent<Interactor>();
 }
 
 public interface IInteractable

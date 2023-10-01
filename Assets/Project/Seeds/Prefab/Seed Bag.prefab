@@ -131,6 +131,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickableObject: {fileID: 11400000, guid: f46fcea6e8317fc49a777f27cc93cc6f, type: 2}
+  spriteRenderer: {fileID: 1723708438301478444}
+  OnPickItem:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &8302439444570626932
 PrefabInstance:
   m_ObjectHideFlags: 0

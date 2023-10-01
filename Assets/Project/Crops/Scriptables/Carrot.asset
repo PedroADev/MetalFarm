@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3438b6369f43f8b4a827734e46d55692, type: 3}
   m_Name: Carrot
   m_EditorClassIdentifier: 
+  cropSprite: {fileID: 1296405934, guid: 6274bf39c650373449dfadfb8cd9c800, type: 3}
   usableTools: []

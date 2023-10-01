@@ -259,7 +259,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -1685684953, guid: 56f4af9067e88834e95efb3739155f08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1264,6 +1264,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5382622607078060326, guid: 2d679c5c29f64d043a758cdc6bec8a65, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6863020281215625699, guid: 2d679c5c29f64d043a758cdc6bec8a65, type: 3}
       propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -1339,7 +1343,7 @@ PrefabInstance:
     - target: {fileID: 6863020281215625699, guid: 2d679c5c29f64d043a758cdc6bec8a65, type: 3}
       propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 7482667652216324306, guid: 4534bbc951eb3a741a35f65fc5fd75a7, type: 3}
+      objectReference: {fileID: -1685684953, guid: 56f4af9067e88834e95efb3739155f08, type: 3}
     - target: {fileID: 6863020281215625699, guid: 2d679c5c29f64d043a758cdc6bec8a65, type: 3}
       propertyPath: OnPickItem.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
