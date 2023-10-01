@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0110b7746785ce441ab3ac9ed71fa9e1, type: 3}
+  m_Name: Cabbage Seed
+  m_EditorClassIdentifier: 
+  cropToGrow: {fileID: 11400000, guid: 322b5d70d73dee844a9837bfbe4cb7bb, type: 2}
+  growingStateInfos:
+  - stateName: First Stage
+    timeToChangeState: 20
+    stateSprite: {fileID: 1342858625, guid: a634257bba78e1948b71e4f89c3ce406, type: 3}
+  - stateName: Ready Stage
+    timeToChangeState: 15
+    stateSprite: {fileID: 1734251447, guid: b9804df22b2052447853f4c9810356fb, type: 3}

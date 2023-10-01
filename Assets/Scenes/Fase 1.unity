@@ -810,6 +810,7 @@ GameObject:
   - component: {fileID: 892974476}
   - component: {fileID: 892974475}
   - component: {fileID: 892974477}
+  - component: {fileID: 892974478}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -868,9 +869,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 892974475}
-  foice: {fileID: 11400000, guid: 67a5240010e577f47b339fcd862dcc2e, type: 2}
-  luva: {fileID: 11400000, guid: 0ee7bdfcf4e60d143993dc76f4f0dfe9, type: 2}
-  espada: {fileID: 11400000, guid: 9c79143a0d412734c8a12c16c775bc48, type: 2}
 --- !u!61 &892974477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -897,6 +895,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.79, y: 12.08}
   m_EdgeRadius: 0
+--- !u!114 &892974478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892974473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ca62d6ed1baf64f9635d25f123c89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &943119078
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +1002,7 @@ GameObject:
   - component: {fileID: 980133964}
   - component: {fileID: 980133965}
   m_Layer: 0
-  m_Name: personagem
+  m_Name: Render
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

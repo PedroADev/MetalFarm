@@ -6,21 +6,17 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D rb;
-    public Tools foice,luva,espada;
 
-    Vector2 movement;
-
-    // Update is called once per frame
-    void Update()
+    private Vector2 _movement;
+    
+    private void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        _movement.x = Input.GetAxisRaw("Horizontal");
+        _movement.y = Input.GetAxisRaw("Vertical");
     }
-
-   
-
-private void FixedUpdate()
+    
+    private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + _movement * (moveSpeed * Time.fixedDeltaTime));
     }
 }

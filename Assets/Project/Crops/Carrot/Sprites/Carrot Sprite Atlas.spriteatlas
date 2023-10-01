@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Carrot Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 512
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 8db55b0e6c1720048ba9fddc0098eb17, type: 3}
+    - {fileID: 2800000, guid: df837277e53046a44a7b99f5be7505d0, type: 3}
+    - {fileID: 2800000, guid: 4dc43553b33a8bc42b1127f5480859ad, type: 3}
+    - {fileID: 2800000, guid: 8eee91eb88ba2e0429075a3b60029b3d, type: 3}
+    - {fileID: 2800000, guid: 6274bf39c650373449dfadfb8cd9c800, type: 3}
+    - {fileID: 2800000, guid: 3ca6b3e58cc54254e9039dcd0af66626, type: 3}
+    - {fileID: 2800000, guid: 7072d920c2e6270499528fc7aebb7414, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1369407457, guid: 7072d920c2e6270499528fc7aebb7414, type: 3}
+  - {fileID: -232330458, guid: 4dc43553b33a8bc42b1127f5480859ad, type: 3}
+  - {fileID: 841560006, guid: 4dc43553b33a8bc42b1127f5480859ad, type: 3}
+  - {fileID: -347299015, guid: 3ca6b3e58cc54254e9039dcd0af66626, type: 3}
+  - {fileID: 1296405934, guid: 6274bf39c650373449dfadfb8cd9c800, type: 3}
+  - {fileID: 265747851, guid: 8eee91eb88ba2e0429075a3b60029b3d, type: 3}
+  - {fileID: 442903408, guid: 8db55b0e6c1720048ba9fddc0098eb17, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - metalfarm_vegetais_cenorona3_0
+  - metalfarm_vegetais_cenorona4_0
+  - metalfarm_vegetais_cenorona4_1
+  - metalfarm_vegetais_cenorona_0
+  - metalfarm_vegetais_cenorinha2_0
+  - metalfarm_vegetais_cenorona2_0
+  - metalfarm_vegetais_cenorinha_0
+  m_RenderDataMap: {}
+  m_Tag: Carrot Sprite Atlas
+  m_IsVariant: 0
