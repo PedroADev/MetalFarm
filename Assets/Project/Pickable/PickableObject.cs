@@ -27,4 +27,6 @@ public abstract class PickableObject<T> : MonoBehaviour where T : BaseItem
             //Destroy(gameObject);
         }
     }
+
+    public T GetPickableObject() => pickableObject;
 }

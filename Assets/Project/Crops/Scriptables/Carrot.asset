@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cropSprite: {fileID: 1296405934, guid: 6274bf39c650373449dfadfb8cd9c800, type: 3}
   usableTools: []
+  rottenCropData:
+    timeToRotten: 5
+    rottenCrop: {fileID: 2752336122310777140, guid: 1ff17a60604dd2342af7685b8fa690cf, type: 3}
