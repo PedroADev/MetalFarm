@@ -38,4 +38,19 @@ public class Interactor : MonoBehaviour
     {
         interactableComponent = null;
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        interactableComponent = other.GetComponent<InteractableComponent>();
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(interactableComponent == null) interactableComponent = other.GetComponent<InteractableComponent>();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        interactableComponent = null;
+    }
 }

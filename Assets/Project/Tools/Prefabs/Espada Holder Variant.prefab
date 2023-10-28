@@ -13,19 +13,23 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 9c79143a0d412734c8a12c16c775bc48, type: 2}
     - target: {fileID: 1012065299365666262, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Name
-      value: Espada Holder
+      value: Espada Holder Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2083434565184925179, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9c1264af63bd9b148b97bd2dabce0d74, type: 3}
+    - target: {fileID: 2083434565184925179, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Color.b
-      value: 0.63529414
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2083434565184925179, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Color.g
-      value: 0.67399836
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2083434565184925179, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: m_Color.r
-      value: 0.94509804
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2806711642981723585, guid: 6b49dde6e6b785945ab7338e73f40cdb, type: 3}
       propertyPath: pickableObject

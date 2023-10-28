@@ -1,42 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SeekDestroy : MonoBehaviour
 {
+    private DestroyableComponent _destroyableComponent;
     public int killTime;
-    public int timer;
-    private bool isColliding;
 
-    // Start is called before the first frame update
-    void Start()
+    private Coroutine c_Destroy;
+    
+    public void OnTriggerEnter(Collider other) //ao permanecer no colisor alheio
     {
-        
-    }
+        _destroyableComponent = other.gameObject.GetComponent<DestroyableComponent>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        if( isColliding)
+        if (_destroyableComponent != null) //o alvo deve ter a tag "Victim"
         {
-            timer=Time.deltaTime;
+            c_Destroy = StartCoroutine(DestroyItem(killTime));
         }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (_destroyableComponent == null) return;
         
+        //Verifica se a corotina existe/esta sendo executada
+        if(c_Destroy != null) StopCoroutine(c_Destroy);
     }
 
-    public void OnTriggerStay(Collider2D collision) //ao permanecer no colisor alheio
+    private void DestroyTarget()
     {
-        isColliding = true;
-        if (collision.gameObject.CompareTag("Victim")) //o alvo deve ter a tag "Victim"
-        {
-            if (timer >= killTime)
-            {
-                Destroy(collision.gameObject);
-            }
-        } 
+        _destroyableComponent.OnDestroyed?.Invoke();
     }
-
-    public void OnTriggerExit(Collider2D collision)
+    
+    private IEnumerator DestroyItem(float time)
     {
-        isColliding = false;
+        print("Começou");
+        yield return new WaitForSeconds(time);
+        DestroyTarget();
     }
+}
