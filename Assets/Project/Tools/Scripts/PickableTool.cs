@@ -22,7 +22,7 @@ public class PickableTool : PickableObject<Tools>
     {
         base.InitializePickableObject(baseItem);
         
-        spriteRenderer.sprite = baseItem.toolSprite;
+        
     }
 
     public void HideTool()

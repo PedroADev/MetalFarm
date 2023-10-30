@@ -6,8 +6,7 @@ using UnityEngine.Events;
 
 public class RottenCropProcess : MonoBehaviour
 {
-    [SerializeField] private PickableCrop pickableCrop;
-    private Crops crop;
+    [SerializeField] private Crop crop;
 
     private Coroutine c_rottenProcess;
 
@@ -15,13 +14,13 @@ public class RottenCropProcess : MonoBehaviour
 
     private void OnEnable()
     {
-        crop = pickableCrop.GetPickableObject();
-        
-        StartRotten();
+        crop.CropReady += StartRotten;
     }
 
     private void OnDisable()
     {
+        crop.CropReady -= StartRotten;
+        
         StopRotten();
     }
 
@@ -37,9 +36,8 @@ public class RottenCropProcess : MonoBehaviour
     
     private IEnumerator RottenProcess()
     {
-        yield return new WaitForSeconds(crop.rottenCropData.timeToRotten);
+        yield return new WaitForSeconds(crop.GetCrop().rottenCropData.timeToRotten);
 
-        Instantiate(crop.rottenCropData.rottenCrop, transform.position, Quaternion.identity);
         onFinishRotten?.Invoke();
     }
 }

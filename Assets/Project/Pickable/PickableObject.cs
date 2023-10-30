@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public abstract class PickableObject<T> : MonoBehaviour where T : BaseItem
 {
     [SerializeField] protected T pickableObject;
-    [SerializeField] protected SpriteRenderer spriteRenderer;
 
     [SerializeField] protected UnityEvent<T> OnPickItem = new UnityEvent<T>();
     [SerializeField] protected UnityEvent OnRemoveItem = new UnityEvent();

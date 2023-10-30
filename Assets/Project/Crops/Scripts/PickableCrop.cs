@@ -7,8 +7,6 @@ public class PickableCrop : PickableObject<Crops>
     public override void InitializePickableObject(Crops baseItem)
     {
         base.InitializePickableObject(baseItem);
-
-        spriteRenderer.sprite = baseItem.cropSprite;
     }
 
     public override void PickItem(Interactor interactor)

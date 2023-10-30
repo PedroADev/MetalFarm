@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5282820060209252901, guid: 38bf14e56ec2b9546afd07621810bde6, type: 3}
       propertyPath: m_Name
-      value: Interactable Area Variant
+      value: Item Interactable Area
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1540840993230788239, guid: 38bf14e56ec2b9546afd07621810bde6, type: 3}
@@ -79,9 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061624f45bd592e4d8d82053f9d3535d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <CanInteract>k__BackingField: 1
   OnInteractionSuccess:
     m_PersistentCalls:
       m_Calls: []
+  expectedBaseItems: []
   OnItemInteractionSuccess:
     m_PersistentCalls:
       m_Calls: []
