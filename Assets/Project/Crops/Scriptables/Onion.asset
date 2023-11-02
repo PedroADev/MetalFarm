@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3438b6369f43f8b4a827734e46d55692, type: 3}
   m_Name: Onion
   m_EditorClassIdentifier: 
-  cropSprite: {fileID: -1269852825, guid: 92208888618becd42afb6969348facbf, type: 3}
+  cropPrefab: {fileID: 9047409993500167652, guid: eae2e9571183d924b9b7c4a012f11d73, type: 3}
   usableTools: []
+  growingStateInfos:
+  - timeToChangeState: 10
+    animationName: 
+  - timeToChangeState: 5
+    animationName: 
+  rottenCropData:
+    timeToRotten: 5
