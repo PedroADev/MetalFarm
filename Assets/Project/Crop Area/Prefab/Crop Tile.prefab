@@ -802,7 +802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2705987651240162711, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
       propertyPath: expectedBaseItems.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2705987651240162711, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
       propertyPath: expectedBaseItems.Array.data[0]
@@ -816,6 +816,10 @@ PrefabInstance:
       propertyPath: expectedBaseItems.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: 6d934baaa93d74747a105fc995256c16, type: 2}
+    - target: {fileID: 2705987651240162711, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
+      propertyPath: expectedBaseItems.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: a540325323687db48ab52031f8b3321b, type: 2}
     - target: {fileID: 2705987651240162711, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
       propertyPath: OnInteractionSuccess.m_PersistentCalls.m_Calls.Array.size
       value: 1

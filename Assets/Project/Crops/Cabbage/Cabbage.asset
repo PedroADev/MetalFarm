@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3438b6369f43f8b4a827734e46d55692, type: 3}
   m_Name: Cabbage
   m_EditorClassIdentifier: 
-  cropSprite: {fileID: 1734251447, guid: b9804df22b2052447853f4c9810356fb, type: 3}
+  cropPrefab: {fileID: 3047496504584817462, guid: 11748dacd2a3d674eb8ec67aa281437b, type: 3}
   usableTools: []
+  growingStateInfos:
+  - timeToChangeState: 10
+    animationName: 
+  - timeToChangeState: 5
+    animationName: 
   rottenCropData:
     timeToRotten: 5
-    rottenCrop: {fileID: 2752336122310777140, guid: 1ff17a60604dd2342af7685b8fa690cf, type: 3}

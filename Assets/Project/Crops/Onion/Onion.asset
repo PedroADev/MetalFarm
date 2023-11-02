@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cropPrefab: {fileID: 9047409993500167652, guid: eae2e9571183d924b9b7c4a012f11d73, type: 3}
   usableTools: []
-  growingStateInfos: []
+  growingStateInfos:
+  - timeToChangeState: 10
+    animationName: 
+  - timeToChangeState: 5
+    animationName: 
   rottenCropData:
     timeToRotten: 5
-    rottenCrop: {fileID: 2752336122310777140, guid: 1ff17a60604dd2342af7685b8fa690cf, type: 3}
