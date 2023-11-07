@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rotten Pumpkin Animator
+  m_Controller: {fileID: 9100000, guid: 47be4e95509ae5c4db1fa74336b08d97, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 44e5110f7213f874e86b668d38eb87dc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e6b44723b6504da48b990657efce4094, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0928db4812700564c8071d7cab201412, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4d53e014684f50f4cafac1cbd42c88a0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1445272d6763df64881fe8d73c8fe1fd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c804ff6ceaf3eed43b9f7e94e9e9fc32, type: 2}

@@ -2,18 +2,30 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class PickableObject<T> : MonoBehaviour where T : BaseItem
 {
     [SerializeField] protected T pickableObject;
 
-    public void PickItem(Interactor interactor)
+    [SerializeField] protected UnityEvent<T> OnPickItem = new UnityEvent<T>();
+    [SerializeField] protected UnityEvent OnRemoveItem = new UnityEvent();
+
+    public virtual void InitializePickableObject(T baseItem)
     {
-        if (interactor.characterHeldComponent.CurrentHeldItem == null)
+        pickableObject = baseItem;
+    }
+
+    public virtual void PickItem(Interactor interactor)
+    {
+        if (interactor.characterHeldComponent.GetHeldData().currentHeldItem == null)
         {
-            interactor.characterHeldComponent.ChangeHeldItem(pickableObject);
+            interactor.characterHeldComponent.ChangeHeldItem(pickableObject, OnRemoveItem);
             
-            Destroy(gameObject);
+            OnPickItem?.Invoke(pickableObject);
+            //Destroy(gameObject);
         }
     }
+
+    public T GetPickableObject() => pickableObject;
 }

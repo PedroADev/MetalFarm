@@ -10,27 +10,40 @@ public class ItemInteractionBehaviour : InteractableComponent
     [SerializeReference] public List<BaseItem> expectedBaseItems;
     public UnityEvent<BaseItem> OnItemInteractionSuccess = new UnityEvent<BaseItem>();
 
-    public override void Interact(Interactor interactor)
+    public void InitializeItemList(List<BaseItem> itemsList)
     {
-        var heldItem = interactor.characterHeldComponent.CurrentHeldItem;
+        expectedBaseItems = itemsList;
+    }
+    
+    public override bool Interact(Interactor interactor)
+    {
+        if(!CanInteract) return false;
         
-        if (CheckHeldItem(heldItem))
-        {
-            OnInteractionSuccess?.Invoke(interactor);
-            OnItemInteractionSuccess?.Invoke(heldItem);
-        }
+        var heldItem = interactor.characterHeldComponent.GetHeldData();
+
+        if (!CheckHeldItem(heldItem)) return false;
+        
+        OnInteractionSuccess?.Invoke(interactor);
+        OnItemInteractionSuccess?.Invoke(heldItem.currentHeldItem);
+
+        return true;
     }
 
     public void RemoveItem(Interactor interactor)
     {
-        if (CheckHeldItem(interactor.characterHeldComponent.CurrentHeldItem))
+        if (CheckHeldItem(interactor.characterHeldComponent.GetHeldData()))
         {
             interactor.characterHeldComponent.RemoveHeldItem();
         }
     }
 
-    private bool CheckHeldItem(BaseItem heldItem)
+    private bool CheckHeldItem(CharacterHeldData heldData)
     {
-        return expectedBaseItems.Contains(heldItem);
+        return expectedBaseItems.Contains(heldData.currentHeldItem) || expectedBaseItems.Count <= 0;
+    }
+
+    public void ChangeCanInteract(bool value)
+    {
+        CanInteract = value;
     }
 }

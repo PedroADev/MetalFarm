@@ -16,7 +16,7 @@ MonoBehaviour:
   growingStateInfos:
   - stateName: First Stage
     timeToChangeState: 20
-    stateSprite: {fileID: 21300000, guid: dcea51d6065d64246aeec467afeff684, type: 3}
-  - stateName: Second Stage
+    stateSprite: {fileID: 1342858625, guid: a634257bba78e1948b71e4f89c3ce406, type: 3}
+  - stateName: Ready Stage
     timeToChangeState: 15
-    stateSprite: {fileID: 21300000, guid: 748ae8b33df036b46a86e0387f1602cf, type: 3}
+    stateSprite: {fileID: 1734251447, guid: b9804df22b2052447853f4c9810356fb, type: 3}

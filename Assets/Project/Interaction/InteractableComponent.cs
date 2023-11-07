@@ -6,15 +6,24 @@ using UnityEngine.Events;
 
 public class InteractableComponent : MonoBehaviour, IInteractable
 {
-    public virtual void Interact(Interactor interactor)
-    {
-        OnInteractionSuccess?.Invoke(interactor);
-    }
-
+    [field: SerializeField] public bool CanInteract { get; protected set; } = true;
+    
     public UnityEvent<Interactor> OnInteractionSuccess = new UnityEvent<Interactor>();
+    
+    public virtual bool Interact(Interactor interactor)
+    {
+        if (CanInteract)
+        {
+            OnInteractionSuccess?.Invoke(interactor);
+
+            return true;
+        }
+
+        return false;
+    }
 }
 
 public interface IInteractable
 {
-    void Interact(Interactor interactor);
+    bool Interact(Interactor interactor);
 }

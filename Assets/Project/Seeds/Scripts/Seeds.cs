@@ -12,5 +12,4 @@ public abstract class BaseItem: ScriptableObject
 public class Seeds : BaseItem
 {
     public Crops cropToGrow;
-    public GrowingStateInfo[] growingStateInfos;
 }

@@ -26,13 +26,30 @@ public class Interactor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!interactableComponent)
-        {
-            interactableComponent = other.GetComponent<InteractableComponent>();
-        }
+        interactableComponent = other.GetComponent<InteractableComponent>();
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if(interactableComponent == null) interactableComponent = other.GetComponent<InteractableComponent>();
     }
 
     private void OnTriggerExit2D(Collider2D other)
+    {
+        interactableComponent = null;
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        interactableComponent = other.GetComponent<InteractableComponent>();
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(interactableComponent == null) interactableComponent = other.GetComponent<InteractableComponent>();
+    }
+
+    private void OnTriggerExit(Collider other)
     {
         interactableComponent = null;
     }
