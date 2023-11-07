@@ -8,19 +8,10 @@ public class DestroyableComponent : MonoBehaviour
 {
     public UnityEvent OnDestroyed;
 
-    private void OnEnable()
+    public void DestroyComponent()
     {
-        OnDestroyed.AddListener(DestroyComponent);
-    }
-
-    private void OnDisable()
-    {
-        OnDestroyed.RemoveListener(DestroyComponent);
-    }
-
-    private void DestroyComponent()
-    {
-        Debug.Log("Destruiu");
-        Destroy(gameObject);
+        OnDestroyed?.Invoke();
+        
+        Destroy(gameObject, 0.1f);
     }
 }

@@ -220,6 +220,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4779501323609496967, guid: 3f34988ea977df94aa17020d6c541036, type: 3}
+      propertyPath: onFinishRotten.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8507428852886129133, guid: 85a1e96502fd7ae4e9a8c8b1acc0d967, type: 3}
     - target: {fileID: 5009251539913312450, guid: 3f34988ea977df94aa17020d6c541036, type: 3}
       propertyPath: m_Controller
       value: 

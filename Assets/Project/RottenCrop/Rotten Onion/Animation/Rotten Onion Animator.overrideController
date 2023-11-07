@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rotten Onion Animator
+  m_Controller: {fileID: 9100000, guid: 47be4e95509ae5c4db1fa74336b08d97, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 44e5110f7213f874e86b668d38eb87dc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7a6889c5e09469446bb66204e29a30cf, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0928db4812700564c8071d7cab201412, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ed3e529e635182349920d9f6ada0f143, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1445272d6763df64881fe8d73c8fe1fd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 543c4ec0c644e904f9b9ef8b389b4a8e, type: 2}

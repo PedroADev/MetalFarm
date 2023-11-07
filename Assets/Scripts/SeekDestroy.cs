@@ -30,7 +30,7 @@ public class SeekDestroy : MonoBehaviour
 
     private void DestroyTarget()
     {
-        _destroyableComponent.OnDestroyed?.Invoke();
+        _destroyableComponent.DestroyComponent();
     }
     
     private IEnumerator DestroyItem(float time)
