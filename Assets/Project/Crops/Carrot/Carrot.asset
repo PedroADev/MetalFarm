@@ -10,13 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3438b6369f43f8b4a827734e46d55692, type: 3}
-  m_Name: Pumpikin
+  m_Name: Carrot
   m_EditorClassIdentifier: 
-<<<<<<<< HEAD:Assets/Project/Crops/Carrot/Carrot.asset
   cropPrefab: {fileID: 7492622577557533443, guid: 2b5a899052af4254992fbebd183ff4fd, type: 3}
-========
-  cropPrefab: {fileID: 7942778413537728839, guid: ee11213f1aca6e2459e2d71d63ebd5c1, type: 3}
->>>>>>>> Bruno:Assets/Project/Crops/Scriptables/Carrot.asset
   usableTools: []
   growingStateInfos:
   - timeToChangeState: 10
