@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 
 public abstract class BaseItem: ScriptableObject
 {
-
+    public Sprite sprite;
 }
 
 [CreateAssetMenu(menuName = "Seed", fileName = "New Seed")]

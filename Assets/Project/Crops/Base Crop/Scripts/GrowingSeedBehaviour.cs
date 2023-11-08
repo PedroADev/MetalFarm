@@ -19,7 +19,8 @@ public class GrowingSeedBehaviour : MonoBehaviour
 
     private Coroutine _growingCoroutine = null;
 
-    public UnityEvent<Crops> onEndGrowing = new UnityEvent<Crops>();
+    public UnityEvent<Crop> onEndGrowing = new UnityEvent<Crop>();
+    public UnityEvent onCropHarvested = new UnityEvent();
 
     private Seeds currentSeed;
     private Crop _growingCrop;
@@ -29,6 +30,7 @@ public class GrowingSeedBehaviour : MonoBehaviour
         currentSeed = (Seeds)seed;
 
         growingStates = currentSeed.cropToGrow.growingStateInfos;
+        _currentGrowingSeedIndex = 0;
     }
 
     private void OnEnable()
@@ -47,6 +49,9 @@ public class GrowingSeedBehaviour : MonoBehaviour
         var currentGrowingState = growingStates.Length > _currentGrowingSeedIndex ? growingStates[_currentGrowingSeedIndex] : null;
 
         _growingCrop = Instantiate(currentSeed.cropToGrow.cropPrefab, transform.position, quaternion.identity);
+
+        _growingCrop.CropHarvested += () => onCropHarvested?.Invoke();
+        
         _growingCoroutine = StartCoroutine(GrowPlant(currentGrowingState));
     }
     
@@ -61,9 +66,7 @@ public class GrowingSeedBehaviour : MonoBehaviour
         if (currentGrowingState == null)
         {
             _growingCrop.OnCropReady();
-            onEndGrowing?.Invoke(currentSeed.cropToGrow);
-
-            gameObject.SetActive(false);
+            onEndGrowing?.Invoke(_growingCrop);
             
             yield break;
         }

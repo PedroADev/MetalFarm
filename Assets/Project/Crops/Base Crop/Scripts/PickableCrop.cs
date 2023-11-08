@@ -11,8 +11,8 @@ public class PickableCrop : PickableObject<Crops>
 
     public override void PickItem(Interactor interactor)
     {
-        base.PickItem(interactor);
-        
-        
+        interactor.characterHeldComponent.ChangeHeldItem(pickableObject, OnRemoveItem);
+            
+        OnPickItem?.Invoke(pickableObject);
     }
 }

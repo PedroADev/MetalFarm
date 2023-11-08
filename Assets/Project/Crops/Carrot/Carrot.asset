@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3438b6369f43f8b4a827734e46d55692, type: 3}
   m_Name: Carrot
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 6274bf39c650373449dfadfb8cd9c800, type: 3}
   cropPrefab: {fileID: 7492622577557533443, guid: 2b5a899052af4254992fbebd183ff4fd, type: 3}
   usableTools: []
   growingStateInfos:
