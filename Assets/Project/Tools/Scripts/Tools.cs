@@ -5,6 +5,4 @@ using UnityEngine;
 public class Tools : BaseItem
 {
     public string toolName;
-
-    public Sprite toolSprite;
 }

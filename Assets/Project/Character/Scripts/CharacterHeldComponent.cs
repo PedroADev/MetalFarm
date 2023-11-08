@@ -15,6 +15,7 @@ public struct CharacterHeldData
 public class CharacterHeldComponent : MonoBehaviour
 {
     [SerializeField] private CharacterHeldData characterHeldData;
+    [SerializeField] private SpriteRenderer holdableHolderSpriteRenderer;
 
     public bool ChangeHeldItem(BaseItem newItem, UnityEvent onRemoveItem)
     {
@@ -24,6 +25,7 @@ public class CharacterHeldComponent : MonoBehaviour
         }
 
         characterHeldData = new CharacterHeldData { currentHeldItem = newItem, OnRemoveItem = onRemoveItem };
+        holdableHolderSpriteRenderer.sprite = newItem.sprite;
 
         return true;
     }
@@ -32,6 +34,8 @@ public class CharacterHeldComponent : MonoBehaviour
     {
         characterHeldData.OnRemoveItem?.Invoke();
         characterHeldData = new CharacterHeldData { currentHeldItem = null, OnRemoveItem = null };
+
+        holdableHolderSpriteRenderer.sprite = null;
         //ChangeHeldItem(null, null);
     }
 
