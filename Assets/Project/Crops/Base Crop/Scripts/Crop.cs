@@ -12,6 +12,7 @@ public class Crop : MonoBehaviour
     public Crops GetCrop() => cropAsset;
 
     public event Action CropReady = delegate {  };
+    public event Action CropHarvested = delegate {  };
 
     public void ChangeState(GrowingStateInfo newState)
     {
@@ -23,5 +24,10 @@ public class Crop : MonoBehaviour
     {
         animator.SetTrigger("Ready");
         CropReady();
+    }
+    
+    public void OnCropHarvested()
+    {
+        CropHarvested();
     }
 }

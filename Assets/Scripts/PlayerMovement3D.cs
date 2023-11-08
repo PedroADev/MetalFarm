@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement3D : MonoBehaviour
 {
     public float moveSpeed;
-    public Rigidbody rb;
+    public Transform render;
 
     private Vector3 _movement;
     
@@ -19,8 +19,8 @@ public class PlayerMovement3D : MonoBehaviour
     {
         if (_movement.magnitude > 0f)
         {
-            transform.Translate(_movement.normalized * 0.1f, Space.World);
-            transform.rotation = Quaternion.LookRotation(_movement, Vector3.up);
+            transform.Translate(_movement.normalized * moveSpeed, Space.World);
+            render.rotation = Quaternion.LookRotation(_movement, Vector3.up);
         }
     }
 }
