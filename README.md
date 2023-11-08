@@ -31,7 +31,7 @@ Metal Farm está sendo desenvolvido para a plataforma PC - Windows.
 ### Público Alvo e Classificação Indicativa
 Com classificação indicativa para 10 anos , Metal Farm tem como público alvo fãs de jogos casuais com idade entre 10 e 20 anos.
 
-## Equipe de desenvolvimento
+### Equipe de desenvolvimento
 ##### Bruno Magalhães - Programador
 ##### Leonardo David - Documentação e Sound Design
 ##### Heloisa Tenório - Artista
@@ -51,9 +51,9 @@ Metal Farm está alinhado com a ODS "Fome Zero e Agricultura Sustentável" da Ag
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Titulo ou Arte do Projeto
-## Versão: 1.0 
-## Status do Projeto: ✔️ Concluído ⚠️ Espera ❌ Cancelado
+# Metal Farm
+## Versão: 0.2 
+## Status do Projeto: ⚠️ Espera
 
 ## Tópicos
 🔹 Descrição do projeto 
@@ -82,22 +82,14 @@ Metal Farm está alinhado com a ODS "Fome Zero e Agricultura Sustentável" da Ag
 
 🔹 Informações Extras
 
-
-...
-
-Insira os tópicos do README em links para facilitar a navegação do leitor
-
 ## Descrição do projeto
-Descrição breve do projeto compondo um paragrafo ou dois.
+Metal Farm é um jogo casual com temática Rock'n'Roll, onde o jogador deve cuidar de sua fazenda superando os obstáculos da sua colheita rebelde.
 
 ## Funcionalidades ⚙️
-✔️ Funcionalidade 1
-
-✔️ Funcionalidade 2
-
-✔️ Funcionalidade 3
-
-✔️ Funcionalidade 4
+✔️ Movimentação do personagem;
+✔️ Preparar a terra para plantar;
+✔️ Plantar os vegetais;
+✔️ Colher os vegetais
 
 ## Distribuição
 Link para teste da versão disponibilizada.
@@ -109,70 +101,38 @@ Aparelho utilizado para testes.
 - Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação, para rodar o projeto.
 
 ## Como rodar a aplicação 
-Explicação de como se deve utilizar o projeto.
-
-## Testes realizados
-Utilização de imagens e descrição do qeu foi testado.
-
-## Banco de Dados 🗂️
-Caso tenha acesso a uma base de dados, deixe a descrição do arquivo (json, csv, xml e etc).
-
-## Linguagens, dependencias e libs utilizadas 📚
-![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-
-XML
-...
-Liste as tecnologias utilizadas no projeto que não forem reconhecidas pelo Github
-
-## Resolvendo Problemas 
-Em issues foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos.
-
-## Recursos de inseridos 🧰
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação, insira fotos da tela do app.
-
-📝 Tarefa 1
-
-📝 Tarefa 2
-
-📝 Tarefa 3
-
-## Desenvolvedores/Contribuintes:
-Liste o time responsável pelo desenvolvimento do projeto
-
-## Licença
-The MIT License (MIT)
-
-## Copyright ©️ Ano - Titulo do Projeto
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## Como rodar a aplicação 
-Fazer o Download do Pojeto e abri-lo com a Unity.
-
+Fazer o Download do Pojeto (repositório) e abri-lo com a Unity.
 
 ## Testes realizados
 Foram realizados testes com o objetivo de checar o funciomaneto das principais mecânicas do Projeto, utiliazando [debug.log] receber o retorno de determinada implementação através do console dentro da plataforma Unity.
 ![image](https://github.com/PedroADev/MetalFarm/assets/89281859/91dad017-ea03-46bb-adee-6c0a69cf0f87)
 
+## Banco de Dados 🗂️
+Atualmente este projeto não conta com um banco de dado
 
 ## Linguagens, dependencias e libs utilizadas 📚
 ![unity](https://mmos.com/wp-content/uploads/2017/05/unity-banner.jpg)
 
 - C#
-- Unity 2D
+- Unity
+
+## Resolvendo Problemas 
+Havia um problema relacionado a interação das ferramentas com os objetos de terra, sendo necessária uma revisão no lógica código;
+
+Tivemos um problema relacionada a função Destroy, onde o script que permite o inimigo destruir objetos em determinado espaço de tempo não estava funcionando corretamente. O problema pode ser corrigido com a implementação de "Coroutines";
 
 ## Recursos de inseridos 🧰
 Tarefas/funcionalidas que ainda precisam ser implenetadas no projeto:
 
-📝 Sprite das personagens e itens
-
-📝 Crescimento das plantas
+📝 Animação das personagens
 
 📝 Mecânica de combate
 
-
+## Desenvolvedores/Contribuintes:
+Bruno Magalhães
+Pedro Mattos
 
 ## Licença
-The MIT License (MIT)
+Centro Universitário FACENS
 
 ## Copyright ©️ 2023 - Metal Farm
