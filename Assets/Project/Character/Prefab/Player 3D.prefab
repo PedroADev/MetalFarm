@@ -164,6 +164,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alignNotLook: 1
+--- !u!1 &5512583710514087692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8854362291413050361}
+  m_Layer: 3
+  m_Name: Player Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8854362291413050361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5512583710514087692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7210932199617062644}
+  m_Father: {fileID: 7802463905245385394}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6193327969934821629
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7210932199617062644}
   - component: {fileID: 4487359033477363138}
-  - component: {fileID: 542379262084105723}
+  - component: {fileID: 4947944044019414574}
   m_Layer: 3
   m_Name: Interactor
   m_TagString: Untagged
@@ -189,13 +221,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6193327969934821629}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 4.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7802463905245385394}
-  m_RootOrder: 1
+  m_Father: {fileID: 8854362291413050361}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4487359033477363138
 MonoBehaviour:
@@ -211,8 +243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterAnimations: {fileID: 4581417923153994434}
   characterHeldComponent: {fileID: 7802463905245385398}
---- !u!135 &542379262084105723
-SphereCollider:
+--- !u!136 &4947944044019414574
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -221,8 +253,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 3
+  m_Height: 8
+  m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7802463905245385393
 GameObject:
@@ -258,7 +291,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4347344471544450753}
-  - {fileID: 7210932199617062644}
+  - {fileID: 8854362291413050361}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -276,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
   render: {fileID: 4347344471544450753}
+  holder: {fileID: 8854362291413050361}
   characterAnimations: {fileID: 4581417923153994434}
 --- !u!114 &7802463905245385398
 MonoBehaviour:

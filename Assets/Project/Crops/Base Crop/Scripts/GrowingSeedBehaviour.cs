@@ -9,7 +9,6 @@ public class GrowingStateInfo
 {
     [Header("Growing Properties")] 
     public float timeToChangeState;
-    public string animationName;
 }
 
 public class GrowingSeedBehaviour : MonoBehaviour
@@ -50,7 +49,12 @@ public class GrowingSeedBehaviour : MonoBehaviour
 
         _growingCrop = Instantiate(currentSeed.cropToGrow.cropPrefab, transform.position, quaternion.identity);
 
-        _growingCrop.CropHarvested += () => onCropHarvested?.Invoke();
+        _growingCrop.CropHarvested += () =>
+        {
+            StopGrowingProcess();
+            
+            onCropHarvested?.Invoke();
+        };
         
         _growingCoroutine = StartCoroutine(GrowPlant(currentGrowingState));
     }

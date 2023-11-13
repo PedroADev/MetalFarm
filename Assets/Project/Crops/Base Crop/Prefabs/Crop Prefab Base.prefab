@@ -53,6 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cropAsset: {fileID: 0}
   animator: {fileID: 5009251539913312450}
+  interactableComponent: {fileID: 4913032982617457084}
 --- !u!114 &4779501323609496967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item Interactable Area
       objectReference: {fileID: 0}
+    - target: {fileID: 510003701818131667, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 860946639010490939, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -339,6 +344,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
+--- !u!114 &4913032982617457084 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2705987651240162711, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
+  m_PrefabInstance: {fileID: 7035467151002727467}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061624f45bd592e4d8d82053f9d3535d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7661100640352542224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 860946639010490939, guid: fbfe84f16e50d754c8131dad19e8176a, type: 3}
