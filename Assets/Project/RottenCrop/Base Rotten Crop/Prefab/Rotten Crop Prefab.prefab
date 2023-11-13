@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7408059567295799134}
   - component: {fileID: 3352365308255613485}
   - component: {fileID: 7987858082688591491}
+  - component: {fileID: 4910915532747212266}
   m_Layer: 0
   m_Name: Rotten Crop Prefab
   m_TagString: Untagged
@@ -77,6 +78,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetType: 2
+--- !u!114 &4910915532747212266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581297990732843945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a324f786bd55534cba253c33f6dfea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alignNotLook: 1
 --- !u!1 &1638383483926916095
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Foice
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 2ab7556269df8da46a2fd74868f19191, type: 3}
+  skinName: Foice
   toolName: Foice

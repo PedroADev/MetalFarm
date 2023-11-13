@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Cabbage
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: b9804df22b2052447853f4c9810356fb, type: 3}
+  skinName: Alface
   cropPrefab: {fileID: 3047496504584817462, guid: 11748dacd2a3d674eb8ec67aa281437b, type: 3}
   usableTools: []
   growingStateInfos:

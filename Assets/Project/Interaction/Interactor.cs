@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
+    public CharacterAnimations characterAnimations;
     public CharacterHeldComponent characterHeldComponent;
     private InteractableComponent interactableComponent;
 
