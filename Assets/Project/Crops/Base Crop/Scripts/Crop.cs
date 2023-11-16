@@ -10,6 +10,7 @@ public class Crop : MonoBehaviour
 
     [SerializeField] private Animator animator;
     [SerializeField] private InteractableComponent interactableComponent;
+    
     public Crops GetCrop() => cropAsset;
 
     public event Action CropReady = delegate {  };
