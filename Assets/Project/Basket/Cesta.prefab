@@ -151,7 +151,6 @@ MonoBehaviour:
   OnRemoveItem:
     m_PersistentCalls:
       m_Calls: []
-  crops: []
 --- !u!1001 &488708885631318233
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,4 +6,7 @@ using UnityEngine;
 public class LevelOrders : ScriptableObject
 {
     public List<Order> orderLists = new List<Order>();
+
+    public float minTimeToNextOrder;
+    public float maxTimeToNextOrder;
 }
