@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -60}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1446089672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1280}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e9f1dc9b768544f8e9e68cec6e7a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelOrders: {fileID: 11400000, guid: 4c48711bb2f04404397b865474bbc6e1, type: 2}
+  levelData: {fileID: 11400000, guid: 4c48711bb2f04404397b865474bbc6e1, type: 2}
   currentOrders: []
   newOrderArrive:
     m_PersistentCalls:

@@ -3,44 +3,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class OrderManager : MonoBehaviour
 {
-    public LevelOrders levelOrders;
+    public LevelData levelData;
 
     public List<Order> currentOrders = new List<Order>();
 
     private int currentOrder = 0;
 
     public UnityEvent<Order> newOrderArrive = new UnityEvent<Order>();
+    public static event Action<Order> OnOrderDelivered = delegate(Order order) {  };
 
-    private void Awake()
+    public void Initialize()
     {
         InitializeOrders();
-    }
-
-    private void Start()
-    {
+        
         StartCoroutine(AddNextOrder());
     }
 
     private void InitializeOrders()
     {
-        var order = levelOrders.orderLists[currentOrder % levelOrders.orderLists.Count];
+        var order = levelData.GetOrder(currentOrder);
 
         order.processOrder = StartCoroutine(order.ProcessOrder());
+
+        order.onOrderExpired += FinishOrder;
         
         currentOrders.Add(order);
         
         newOrderArrive?.Invoke(order);
 
+        OnOrderDelivered?.Invoke(order);
+        
         currentOrder++;
     }
 
-    public void FinishOrder()
+    public void CompleteOrder()
     {
-        var order = levelOrders.orderLists[0];
+        FinishOrder();
+    }
+
+    private void FinishOrder()
+    {
+        var order = currentOrders[0];
+
+        order.onOrderExpired -= FinishOrder;
         
         StopCoroutine(order.processOrder);
         order.onOrderDelivered?.Invoke();
@@ -57,11 +67,12 @@ public class OrderManager : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(levelOrders.minTimeToNextOrder, levelOrders.maxTimeToNextOrder));
-            
-            //var nextOrder = levelOrders.orderLists[currentOrder % levelOrders.orderLists.Count];
+            yield return new WaitForSeconds(Random.Range(levelData.minTimeToNextOrder, levelData.maxTimeToNextOrder));
 
-            InitializeOrders();
+            if (currentOrders.Count < levelData.maxOrders)
+            {
+                InitializeOrders();
+            }
         }
     }
 }
@@ -76,6 +87,8 @@ public class Order
     public Action onOrderExpired = delegate {  };
 
     private WaitForSeconds _oneSecondDelay = new WaitForSeconds(1);
+
+    public float orderScore;
 
     public Coroutine processOrder;
 

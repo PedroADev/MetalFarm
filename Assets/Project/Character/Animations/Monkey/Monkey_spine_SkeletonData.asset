@@ -18,9 +18,11 @@ MonoBehaviour:
   skeletonJSON: {fileID: 4900000, guid: 1230bb487a87e5742b8e760b3c4bf563, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
-    requiresBlendModeMaterials: 0
+    requiresBlendModeMaterials: 1
     applyAdditiveMaterial: 1
-    additiveMaterials: []
+    additiveMaterials:
+    - pageName: Monkey_spine.png
+      material: {fileID: 2100000, guid: 57d0da0d8dd7e304198b6b018945b9a5, type: 2}
     multiplyMaterials: []
     screenMaterials: []
   skeletonDataModifiers: []
