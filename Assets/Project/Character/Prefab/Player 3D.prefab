@@ -69,6 +69,8 @@ MeshRenderer:
   - {fileID: 2100000, guid: c6481986183a212428fa58cfe0223e5d, type: 2}
   - {fileID: 2100000, guid: 98ab1bcaa89a0ce498ba3d5dd840af63, type: 2}
   - {fileID: 2100000, guid: c6481986183a212428fa58cfe0223e5d, type: 2}
+  - {fileID: 2100000, guid: 98ab1bcaa89a0ce498ba3d5dd840af63, type: 2}
+  - {fileID: 2100000, guid: c6481986183a212428fa58cfe0223e5d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -334,6 +336,21 @@ MonoBehaviour:
       - m_Target: {fileID: 4581417923153994434}
         m_TargetAssemblyTypeName: CharacterAnimationSkinCaller, Assembly-CSharp
         m_MethodName: ChangeSkinByHeldItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnUseItem:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4581417923153994434}
+        m_TargetAssemblyTypeName: CharacterAnimations, Assembly-CSharp
+        m_MethodName: PlayInteractionAnimation
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -7,6 +7,8 @@ public abstract class BaseItem: ScriptableObject
 {
     public Sprite sprite;
     public string skinName;
+
+    public string animationName;
 }
 
 [CreateAssetMenu(menuName = "Seed", fileName = "New Seed")]

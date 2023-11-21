@@ -2669,10 +2669,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3877957884815463983, guid: a2e690bd049278143959a50ecd1f6cbd, type: 3}
-      propertyPath: levelData
-      value: 
-      objectReference: {fileID: 11400000, guid: 4c48711bb2f04404397b865474bbc6e1, type: 2}
     - target: {fileID: 6638400954770637426, guid: a2e690bd049278143959a50ecd1f6cbd, type: 3}
       propertyPath: m_Name
       value: Delivery Station

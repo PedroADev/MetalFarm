@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Carrot
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 299f1ba26137c5a488a32494c55ba674, type: 3}
-  skinName: 
+  skinName: Cenoura
+  animationName: 
   cropPrefab: {fileID: 7492622577557533443, guid: 2b5a899052af4254992fbebd183ff4fd, type: 3}
   usableTools: []
   growingStateInfos:

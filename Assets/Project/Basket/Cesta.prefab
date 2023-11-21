@@ -151,6 +151,7 @@ MonoBehaviour:
   OnRemoveItem:
     m_PersistentCalls:
       m_Calls: []
+  crops: []
 --- !u!1001 &488708885631318233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -269,6 +270,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 322b5d70d73dee844a9837bfbe4cb7bb, type: 2}
   - {fileID: 11400000, guid: 27c84e87e5535d24c9716b235f70879a, type: 2}
   - {fileID: 11400000, guid: 0fce252a02e3fe74987b0ad55d845e5c, type: 2}
+  - {fileID: 11400000, guid: d4f2ff42db394774e9a32d0512f9f159, type: 2}
   OnItemInteractionSuccess:
     m_PersistentCalls:
       m_Calls:

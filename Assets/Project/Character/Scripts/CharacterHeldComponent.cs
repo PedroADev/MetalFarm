@@ -16,6 +16,8 @@ public class CharacterHeldComponent : MonoBehaviour
 {
     [SerializeField] private CharacterHeldData characterHeldData;
     [SerializeField] private UnityEvent<CharacterHeldData> OnHeldItem = new UnityEvent<CharacterHeldData>();
+
+    [SerializeField] private UnityEvent<CharacterHeldData> OnUseItem = new UnityEvent<CharacterHeldData>();
     
     public bool ChangeHeldItem(BaseItem newItem, UnityEvent onRemoveItem)
     {
@@ -43,5 +45,10 @@ public class CharacterHeldComponent : MonoBehaviour
     public CharacterHeldData GetHeldData()
     {
         return characterHeldData;
+    }
+
+    public void UseHeldItem()
+    {
+        OnUseItem?.Invoke(characterHeldData);
     }
 }

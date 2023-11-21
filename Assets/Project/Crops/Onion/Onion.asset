@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Onion
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 8f51044d10a28a14c9729dcbb52f0559, type: 3}
-  skinName: 
+  skinName: Cebola
+  animationName: 
   cropPrefab: {fileID: 9047409993500167652, guid: eae2e9571183d924b9b7c4a012f11d73, type: 3}
   usableTools: []
   growingStateInfos:

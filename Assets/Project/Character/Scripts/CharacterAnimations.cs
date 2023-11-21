@@ -37,4 +37,14 @@ public class CharacterAnimations : MonoBehaviour
         skeletonMecanim.skeleton.SetSkin(skin);
         skeletonMecanim.skeleton.SetSlotsToSetupPose();
     }
+
+    public void PlayInteractionAnimation(CharacterHeldData heldData)
+    {
+        if(heldData.currentHeldItem == null || string.IsNullOrEmpty(heldData.currentHeldItem.animationName))
+        {
+            return;
+        }
+        
+        animator.SetTrigger(heldData.currentHeldItem.animationName);
+    }
 }
