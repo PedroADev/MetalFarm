@@ -10,22 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f117401a6eec164ab84504669939a16, type: 3}
-  m_Name: Level 1 Data
+  m_Name: Level Test Data
   m_EditorClassIdentifier: 
   orderLists:
   - cropOrders:
+    - crop: {fileID: 11400000, guid: 322b5d70d73dee844a9837bfbe4cb7bb, type: 2}
+      amount: 3
     - crop: {fileID: 11400000, guid: 0fce252a02e3fe74987b0ad55d845e5c, type: 2}
-      amount: 1
-    - crop: {fileID: 11400000, guid: 27c84e87e5535d24c9716b235f70879a, type: 2}
       amount: 2
-    orderTime: 150
-    orderScore: 100
-  - cropOrders:
-    - crop: {fileID: 11400000, guid: 0fce252a02e3fe74987b0ad55d845e5c, type: 2}
+    - crop: {fileID: 11400000, guid: 27c84e87e5535d24c9716b235f70879a, type: 2}
       amount: 1
     orderTime: 90
     orderScore: 100
   - cropOrders:
+    - crop: {fileID: 11400000, guid: 322b5d70d73dee844a9837bfbe4cb7bb, type: 2}
+      amount: 2
+    - crop: {fileID: 11400000, guid: 0fce252a02e3fe74987b0ad55d845e5c, type: 2}
+      amount: 2
+    orderTime: 90
+    orderScore: 100
+  - cropOrders:
+    - crop: {fileID: 11400000, guid: d4f2ff42db394774e9a32d0512f9f159, type: 2}
+      amount: 2
     - crop: {fileID: 11400000, guid: 27c84e87e5535d24c9716b235f70879a, type: 2}
       amount: 1
     orderTime: 90
@@ -37,7 +43,7 @@ MonoBehaviour:
       value: 0
   - score:
       value: 0
-  maxOrders: 2
-  minTimeToNextOrder: 20
-  maxTimeToNextOrder: 50
+  maxOrders: 3
+  minTimeToNextOrder: 50
+  maxTimeToNextOrder: 20
   timeToCompleteLevel: 300

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 88fe8555124cc084da1cf689f84c0a77, type: 3}
   skinName: Alface
+  animationName: 
   cropPrefab: {fileID: 3047496504584817462, guid: 11748dacd2a3d674eb8ec67aa281437b, type: 3}
   usableTools: []
   growingStateInfos:
   - timeToChangeState: 10
   - timeToChangeState: 5
   rottenCropData:
-    timeToRotten: 5
+    timeToRotten: 8

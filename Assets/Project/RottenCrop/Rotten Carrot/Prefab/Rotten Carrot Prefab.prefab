@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rotten Carrot Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1581297990732843945, guid: 167b3d9ba1d42e944924ef1035acb3ec, type: 3}
+      propertyPath: m_TagString
+      value: Victim
+      objectReference: {fileID: 0}
     - target: {fileID: 4468903711117459357, guid: 167b3d9ba1d42e944924ef1035acb3ec, type: 3}
       propertyPath: m_RootOrder
       value: 0

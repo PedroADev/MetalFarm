@@ -24,7 +24,8 @@ public class DeliveryStation : MonoBehaviour
         }
         
         heldItem.pickableBasket.InitializeBasket();
-        
+
+        Debug.Log("entrega feita");
         interactor.characterHeldComponent.RemoveHeldItem();
         orderManager.CompleteOrder();
     }

@@ -236,6 +236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabbage Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 6732982455206802642, guid: 3f34988ea977df94aa17020d6c541036, type: 3}
+      propertyPath: m_TagString
+      value: Victim
+      objectReference: {fileID: 0}
     - target: {fileID: 7072030200717509126, guid: 3f34988ea977df94aa17020d6c541036, type: 3}
       propertyPath: cropAsset
       value: 
