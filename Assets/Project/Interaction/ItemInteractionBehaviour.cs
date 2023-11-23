@@ -26,11 +26,6 @@ public class ItemInteractionBehaviour : InteractableComponent
         OnInteractionSuccess?.Invoke(interactor);
         OnItemInteractionSuccess?.Invoke(heldItem.currentHeldItem);
 
-        if (interactor.characterHeldComponent.GetHeldData().currentHeldItem != null)
-        {
-            interactor.characterHeldComponent.UseHeldItem();
-        }
-
         return true;
     }
 

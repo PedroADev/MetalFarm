@@ -9,9 +9,9 @@ AnimatorOverrideController:
   m_Name: Cabbage Animator
   m_Controller: {fileID: 9100000, guid: 860f45980e73a0d449439808608ee880, type: 2}
   m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 44e5110f7213f874e86b668d38eb87dc, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 44e5110f7213f874e86b668d38eb87dc, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 1ca24a290f3cdd848b65238327c89135, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 1ca24a290f3cdd848b65238327c89135, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 33a1f3d382571084994b62101045d403, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 33a1f3d382571084994b62101045d403, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: e590b53e0750c594d8ae8f2b263a98dc, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: e590b53e0750c594d8ae8f2b263a98dc, type: 2}

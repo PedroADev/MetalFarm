@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: Espada
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 9c1264af63bd9b148b97bd2dabce0d74, type: 3}
-  skinName: Espada
-  animationName: Action
   toolName: Espada

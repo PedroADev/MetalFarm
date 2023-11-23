@@ -6,11 +6,8 @@ public class PlayerMovement3D : MonoBehaviour
 {
     public float moveSpeed;
     public Transform render;
-    public Transform holder;
 
     private Vector3 _movement;
-
-    [SerializeField] private CharacterAnimations characterAnimations;
     
     private void Update()
     {
@@ -23,15 +20,7 @@ public class PlayerMovement3D : MonoBehaviour
         if (_movement.magnitude > 0f)
         {
             transform.Translate(_movement.normalized * moveSpeed, Space.World);
-            holder.rotation = Quaternion.LookRotation(_movement, Vector3.up);
-            
-            characterAnimations.SetMovementAnimation(_movement.x, _movement.z);
-
-            var localScale = render.localScale;
-            localScale.x = Mathf.Sign(_movement.x);
-            render.localScale = localScale;
+            render.rotation = Quaternion.LookRotation(_movement, Vector3.up);
         }
-        
-        characterAnimations.SetIdleMovement(_movement.normalized.magnitude);
     }
 }
