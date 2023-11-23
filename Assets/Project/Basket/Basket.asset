@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6722e6ea96cdccc42aceb3eaeb291796, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fcc87d2a5cd59e4e9c5a0290100ecfa, type: 3}
   m_Name: Basket
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 9c1264af63bd9b148b97bd2dabce0d74, type: 3}
+  sprite: {fileID: 0}
   skinName: 
-  toolName: 
+  crops: []

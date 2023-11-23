@@ -5,12 +5,14 @@ using UnityEngine.Serialization;
 
 public abstract class BaseItem: ScriptableObject
 {
+    public Sprite sprite;
+    public string skinName;
 
+    public string animationName;
 }
 
 [CreateAssetMenu(menuName = "Seed", fileName = "New Seed")]
 public class Seeds : BaseItem
 {
     public Crops cropToGrow;
-    public GrowingStateInfo[] growingStateInfos;
 }

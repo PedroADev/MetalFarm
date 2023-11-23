@@ -1,17 +1,42 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PickableBasket : PickableObject<BaseItem>
 {
+    public List<CropData> crops = new List<CropData>();
+    
     private void Awake()
     {
-        pickableObject = ScriptableObject.CreateInstance<Basket>();
+        InitializeBasket();
     }
 
-    public void AddItem(BaseItem item)
+    public void InitializeBasket()
     {
-        ((Basket)pickableObject).crops.Add(item);
+        pickableObject = ScriptableObject.CreateInstance<Basket>();
+        ((Basket)pickableObject).pickableBasket = this;
+
+        crops = new List<CropData>();
+    }
+
+    /*public void AddItem(BaseItem item)
+    {
+        ((Basket)pickableObject).AddItem((Crops)item);
+    }*/
+    
+    public void AddItem(Crops crop)
+    {
+        var cropData = crops.FirstOrDefault(c => c.crop == crop);
+
+        if (cropData != null)
+        {
+            cropData.amount++;
+            
+            return;
+        }
+        
+        crops.Add(new CropData { crop = crop, amount = 1 });
     }
 }
