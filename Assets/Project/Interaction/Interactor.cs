@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
+    public CharacterAnimations characterAnimations;
     public CharacterHeldComponent characterHeldComponent;
-    private InteractableComponent interactableComponent;
+    
+    private InteractableComponent[] interactableComponents;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (interactableComponent)
+            foreach (var interactableComponent in interactableComponents)
             {
                 interactableComponent.Interact(this);
 
@@ -26,31 +28,31 @@ public class Interactor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        interactableComponent = other.GetComponent<InteractableComponent>();
+        interactableComponents = other.GetComponents<InteractableComponent>();
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if(interactableComponent == null) interactableComponent = other.GetComponent<InteractableComponent>();
+        if(interactableComponents is not { Length: > 0 }) interactableComponents = other.GetComponents<InteractableComponent>();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        interactableComponent = null;
+        interactableComponents = null;
     }
     
     private void OnTriggerEnter(Collider other)
     {
-        interactableComponent = other.GetComponent<InteractableComponent>();
+        interactableComponents = other.GetComponents<InteractableComponent>();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(interactableComponent == null) interactableComponent = other.GetComponent<InteractableComponent>();
+        if(interactableComponents is not { Length: > 0 }) interactableComponents = other.GetComponents<InteractableComponent>();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        interactableComponent = null;
+        interactableComponents = null;
     }
 }

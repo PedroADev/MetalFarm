@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Regador
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 40cba870f4c1a1648812785f6c7762c1, type: 3}
+  skinName: Regador
+  animationName: Regar
   toolName: Regador
