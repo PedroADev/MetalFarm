@@ -17,6 +17,7 @@ public class OrderManager : MonoBehaviour
     public UnityEvent<Order> newOrderArrive = new UnityEvent<Order>();
     public static event Action<Order> OnOrderDelivered = delegate(Order order) {  };
 
+    //Comment
     public void Initialize()
     {
         InitializeOrders();
